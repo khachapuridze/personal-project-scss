@@ -1,3 +1,190 @@
+$bg-color-1:#EEEEEE;
+$bg-color-2:#ED1C24;
+$bg-color-3:#DBDBDB;
+$bg-color-4:#898989;
+$color-1:#FFFFFF;
+$color-2:#111111;
+$color-3:#222222;
 .header {
-    background: yellow;
+    width: 100%;
+    background: $bg-color-1;
+    height: 425px;
+    
+    .menu {
+        width: 315px;
+        height: 425px;
+        margin: 0 auto;
+        background-color: #ED1C24;
+        position: relative;
+        padding-left: 34px;
+        .header-text{
+            padding-top: 6px;
+            h3{
+                font-family: 'Montserrat';
+                font-weight: 700;
+                font-size: 18px;
+                color: $color-1;
+                &::first-letter{
+                    font-size: 26px;
+                    border: 3px solid $color-1;
+                    padding: 2px 10px;
+
+                }
+    
+            }
+        }
+        .text{
+            h3{
+                font-family: 'Montserrat';
+                font-size: 22px;
+                line-height: 26px;
+                font-weight: 700;
+                color: $color-1;
+                margin-top: -3px;
+            }
+            h2{
+                font-family: 'Montserrat';
+                font-size: 26px;
+                line-height: 26px;
+                font-weight: 700;
+                color: $color-1;
+                margin-top:-25px;
+            }
+            p{
+                font-family: 'Open Sans', sans-serif;
+                font-weight: 300;
+                font-size: 16px;
+                line-height: 20px;
+                color: $color-1;
+                padding-right: 95px;
+                padding-top: 10px;
+            }
+            .free {
+                margin-top: 40px;
+                
+                h3 {
+                    font-family: 'Montserrat';
+                    font-size: 18px;
+                    color: $color-1;
+                    &::before {
+                        font-family: 'FontAwesome';
+                        content: '\f0a9';
+                        color: $color-2;
+                        margin-right:8px;
+                        font-size: 25px;
+                        
+                    }
+
+
+                }
+            }
+            
+            .photography{
+                padding-top: 36px;
+                p{
+
+                    width: 100px;
+                    font-family: 'Montserrat';
+                    font-size:10px;
+                    line-height: 18px;
+                    color: $color-1;
+                    background: #111111;
+                    text-align: center;
+                    padding:0;
+                    
+                }
+            }
+        }
+        .icons {
+            color: $color-1;
+            position: absolute;
+            bottom: 0;
+            right: 105px;
+            i {
+                margin-right: -5px;
+                border: 1px solid $color-1;
+                padding: 4px;
+                padding: 11px 10px;
+                font-size: 20px;
+
+                
+            }
+    }
+    .burger {
+        width: 65px;
+        height: 60px;
+        background: $color-2;
+        float: right;
+        position: absolute;
+        top: 0;
+        right: -65px;
+        .items {
+            padding: 10px 19px;
+            .burger-items {
+                height: 5px;
+                width: 27px;
+                background-color:$color-1;
+                margin-top: 6px;
+            }
+    
+        }
+        
+    }
+        
+    }
+    .bottom {
+        height: 65px;
+
+        
+        .second {
+            width: 100%;
+            height: 60px;
+            background: $color-2;
+        }
+    }
+
+}
+.overview {
+    width:100%;
+    height: 520px;
+    margin-top: 80px;
+
+
+    .text{
+        padding: 0px 65px;
+        h3{
+            font-family:'Montserrat';
+            font-weight: 700;
+            font-size: 30px;
+            line-height: 36px;
+            color:$color-3;
+        }
+        h5 {
+            font-family:'Open Sans';
+            font-size:20px;
+            line-height: 30px;
+            color: $color-3;
+            font-weight: 300;
+        }
+        .paragraps{
+            display: flex;
+            flex-direction: row;
+            flex-wrap:wrap;
+            .para{
+                flex-direction: row;
+                 width: 300px;
+                 p{
+                     font-family: 'Open Sans';
+                     font-size: 14px;
+                     font-weight: 300;
+                     line-height: 20px;
+                     color: $color-3;
+                 }
+            }
+            .large{
+                padding: 0;
+                width: 600px;
+            }
+        }
+    }
 }
