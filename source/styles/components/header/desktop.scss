@@ -90,17 +90,13 @@ $color-3: #222222;
         }
       }
       .icons {
-        color: $color-1;
-        position: absolute;
-        bottom: 0;
-        right: 5px;
-        i {
-          margin-right: -5px;
-          border: 1px solid $color-1;
-          padding: 4px;
-          padding: 11px 10px;
-          font-size: 20px;
-        }
+          
+        &::before{
+            content:url('/images/header/Icons White.png');
+            position: absolute;
+            bottom: 0;
+            right: 5px;
+          }
       }
       .burger {
         width: 65px;

@@ -91,20 +91,13 @@ $color-3:#222222;
           }
         }
         .icons {
-          color: $color-1;
           
-          i {
-            
-            color: $color-1;
-            padding: 10px 17px;
-            font-size: 28px;
-            border: 1px solid $color-1;
-            margin-right: -5px;
-            &:hover {
-                color: $bg-color-2;
-                cursor: pointer;
-              }
-          }
+          &::before{
+              content:url('/images/header/Icons White.png');
+              position: absolute;
+              bottom: 0;
+              right: 5px;
+            }
         }
         .burger {
           width: 65px;
