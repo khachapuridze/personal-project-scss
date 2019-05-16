@@ -1,0 +1,80 @@
+.overview {
+    display: flex;
+    justify-content: center;
+    background-color: #DBDBDB;
+    overflow: hidden;
+
+    .container {
+        display: flex;
+        width: 1005px;
+
+        .image {
+            display: none;
+            margin-top: 39px;
+            width: 315px;
+            flex-shrink: 0;
+            height: 425px;
+            background-color: $bg-color-4;
+        }
+
+        .text {
+            margin-top: 39px;
+            position: relative;
+            z-index: 0;
+            width: 100%;
+           
+
+            h3 {
+                font-family:'Montserrat';
+                font-weight: 700;
+                font-size: 30px;
+                line-height: 36px;
+                color:$color-3;
+                padding-bottom: 50px;
+            }
+
+            h5 {
+                font-family:'Open Sans';
+                font-size:20px;
+                line-height: 30px;
+                color: $color-3;
+                font-weight: 300;
+                padding-bottom: 30px;
+              }
+
+            .paragraps {
+                display: flex;
+                flex-direction: row;
+                flex-wrap:wrap;
+
+                .para {
+                    flex-direction: row;
+                    width: 300px;
+                    padding-bottom: 30px;
+
+                    p {
+                        font-family: 'Open Sans';
+                        font-size: 14px;
+                        font-weight: 300;
+                        line-height: 20px;
+                        color: $color-3;
+                    }
+                }
+
+                .large {
+                    padding: 0;
+                    width: 600px;
+                }
+            }
+
+          &::before {
+                content: "";
+                background-color: white;
+                width: 500%;
+                height: 100%;
+                position: absolute;
+                z-index: -1;
+            }
+        }
+    }
+}

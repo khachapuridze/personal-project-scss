@@ -1,265 +1,223 @@
-// $bg-color-1:#EEEEEE;
-// $bg-color-2:#ED1C24;
-// $bg-color-3:#DBDBDB;
-// $bg-color-4:#898989;
-// $color-1:#FFFFFF;
-// $color-2:#111111;
-// $color-3:#222222;
-// .header {
-//     width: 100%;
-//     background: $bg-color-1;
-//     height: 425px;
-//     .container {
-//         width: 432px;
-//       .row-1 {
-//         width: 340px;
-//         height: 425px;
-//         background-color: $bg-color-2;
-//         position: relative;
-//         padding-left: 34px;
-//         margin-left: 0;
-//         .header-text {
-//           padding-top: 6px;
-//           h3 {
-//             font-family: "Montserrat";
-//             font-weight: 700;
-//             font-size: 18px;
-//             color: $color-1;
-//             &::first-letter {
-//               font-size: 26px;
-//               border: 3px solid $color-1;
-//               padding: 2px 10px;
-//             }
-//           }
-//         }
-//         .text {
-//           h3 {
-//             font-family: "Montserrat";
-//             font-size: 22px;
-//             line-height: 26px;
-//             font-weight: 700;
-//             color: $color-1;
-//             margin-top: -3px;
-//           }
-//           h2 {
-//             font-family: "Montserrat";
-//             font-size: 26px;
-//             line-height: 26px;
-//             font-weight: 700;
-//             color: $color-1;
-//             margin-top: -25px;
-//           }
-//           p {
-//             font-family: "Open Sans", sans-serif;
-//             font-weight: 300;
-//             font-size: 16px;
-//             line-height: 20px;
-//             color: $color-1;
-//             padding-right: 95px;
-//             padding-top: 10px;
-//           }
-//           .free {
-//             margin-top: 40px;
-  
-//             h3 {
-//               font-family: "Montserrat";
-//               font-size: 18px;
-//               color: $color-1;
-//               &::before {
-//                 font-family: "FontAwesome";
-//                 content: "\f0a9";
-//                 color: $color-2;
-//                 margin-right: 8px;
-//                 font-size: 25px;
-//               }
-//             }
-//           }
-  
-//           .photography {
-//             padding-top: 36px;
-//             p {
-//               width: 100px;
-//               font-family: "Montserrat";
-//               font-size: 10px;
-//               line-height: 18px;
-//               color: $color-1;
-//               background: #111111;
-//               text-align: center;
-//               padding: 0;
-//             }
-//           }
-//         }
-//         .icons {
-          
-//             &::before{
-//                 content:url('/images/header/Icons White.png');
-//                 position: absolute;
-//                 bottom: 0;
-//                 right: 5px;
-//               }
-//           }
-//         .burger {
-//           width: 65px;
-//           height: 60px;
-//           background: $color-2;
-//           float: right;
-//           position: absolute;
-//           top: 0;
-//           right: -65px;
-//           .items {
-//             padding: 10px 19px;
-//             .burger-items {
-//               height: 5px;
-//               width: 27px;
-//               background-color: $color-1;
-//               margin-top: 6px;
-//             }
-//           }
-//         }
-//       }
-//     }
-  
-//     .row-2 {
-//         display: flex;
-//        .first {
-//         width: 100%;
-//         height: 60px;
-//         background: $bg-color-3;
-//         float: left;
-//       }
-//       .second {
-//         width: 868%;
-//         height: 60px;
-//         background: $color-2;
-//         float: right;
-//         .icons {
-//           margin-left: 500px;
-  
-//           i {
-//             color: $color-1;
-//             padding: 15px 17px;
-//             font-size: 28px;
-//             border: 1px solid $color-1;
-//             margin-right: -5px;
-//             &:hover {
-//                 color: $bg-color-2;
-//                 cursor: pointer;
-//               }
-//           }
-//         }
-//       }
-//     }
-//   }
-// .overview {
-//     width:100%;
-//     height: 520px;
-//     margin-top: 80px;
+$bg-color-1: #EEEEEE;
+$bg-color-2: #ED1C24;
+$bg-color-3: #DBDBDB;
+$bg-color-4: #898989;
+$color-1: #FFFFFF;
+$color-2: #111111;
+$color-3: #222222;
 
-//     .posters {
-//         display: none;
-//         .first {
-//           background: $bg-color-3;
-//           width: 140px;
-//           height: 520px;
-         
-//         }
-//         .second {
-//           background: $bg-color-4;
-//           width: 290px;
-//           height: 520px;
-          
-//         }
-//       }
-//     .text{
-//         margin:0 86px;
-//         float: none;
-//         width: auto;
-//         h3{
-//             font-family:'Montserrat';
-//             font-weight: 700;
-//             font-size: 30px;
-//             line-height: 36px;
-//             color:$color-3;
-//         }
-//         h5 {
-//             font-family:'Open Sans';
-//             font-size:20px;
-//             line-height: 30px;
-//             color: $color-3;
-//             font-weight: 300;
-//         }
-//         .paragraps{
-//             display: flex;
-//             flex-direction: row;
-//             flex-wrap:wrap;
-//             .para{
-//                 flex-direction: row;
-//                  width: 290px;
-//                  p{
-//                      font-family: 'Open Sans';
-//                      font-size: 14px;
-//                      font-weight: 300;
-//                      line-height: 20px;
-//                      color: $color-3;
-//                  }
-//             }
-//             .large{
-//                 padding: 0;
-//                 width: 600px;
-//             }
-//         }
-//     }
-// }
+.header {
+    width: 100%;
+    background: $bg-color-1;
+    height: 425px;
 
-// .gallery {
-//     background: $color-2;
-//     width:100%;
-//     height: 610px;
-//     overflow: hidden;
-//     h3{
+    .row-1 {
+        display: flex;
+        position: relative;
+        width: 100%;
+        justify-content: center;
 
-//         display: none;
-//         font-family: 'Montserrat';
-//         font-size:30px;
-//         font-weight:700;
-//         line-height:36px;
-//         margin-left: 770px;
-//         padding-top: 44px;
-//         color:$color-1;
-//     }
-//     .item-big{
-//         width: 620px;
-//         height:300px;
-//         background: $color-1;
-//         margin:0 auto;
-//         margin-top:50px;
-//     }
-//     .small-items{
-//         display: flex;
-//         flex-direction: row;
-//         flex-wrap: wrap;
-//         justify-content: space-between;
-//         width: 620px;
-//         padding-top: 30px;
-//         margin:0 auto;
-        
-//         .item {
-//             background: $color-1;
-//             width: 100px;
-//             height: 100px;
-//             margin-bottom: 10px;
-//             &:hover{
-//                 border:7px solid $bg-color-2;
-//                 cursor: pointer;
-//             }
-//             &:nth-last-child(n+6){
-//                 display: none;
-//             }
-            
+        .container {
+            display: flex;
+            width: 700px;
 
-//         }
+            .burger {
+                width: 50px;
+                height: 50px;
+                background: $color-2;
 
-//     }
-    
-    
-// }
+                .items {
+                    padding: 5px 11px;
+
+                    .burger-items {
+                        height: 5px;
+                        width: 27px;
+                        background-color: $color-1;
+                        margin-top: 6px;
+                    }
+                }
+            }
+        }
+
+        .block {
+            width: 315px;
+            height: 425px;
+            background-color: $bg-color-2;
+            position: relative;
+            display: flex;
+            flex-direction: column;
+
+            .header-text {
+                padding-top: 25px;
+
+                h3 {
+                    font-family: "Montserrat";
+                    font-weight: 700;
+                    font-size: 18px;
+                    color: $color-1;
+
+                    &::before {
+                        content: 'E';
+                        font-size: 26px;
+                        border: 3px solid $color-1;
+                        padding: 2px 10px;
+                        margin-right: 10px;
+                  }
+                }
+            }
+
+            .text {
+
+                h3 {
+                    font-family: "Montserrat";
+                    font-size: 22px;
+                    line-height: 26px;
+                    font-weight: 700;
+                    color: $color-1;
+                    margin-top: 0;
+                }
+
+                h2 {
+                    font-family: "Montserrat";
+                    font-size: 26px;
+                    line-height: 26px;
+                    font-weight: 700;
+                    color: $color-1;
+                    margin-top: 0;
+                }
+
+                .par {
+
+                    p {
+                        font-family: "Open Sans", sans-serif;
+                        font-weight: 300;
+                        font-size: 16px;
+                        line-height: 20px;
+                        color: $color-1;
+                        padding-right: 95px;
+                        padding-top: 35px;
+
+                        &::before {
+                            content: '';
+                            width: 250px;
+                            height: 1px;
+                            background-color: $color-1;
+                            display: block;  
+                            margin-bottom: 10px;
+                        }
+                        
+                        &::after{
+                            content: '';
+                            width: 250px;
+                            height: 1px;
+                            background-color: $color-1;
+                            display: block;  
+                            margin-top: 10px;
+                        }
+                    }
+                }
+
+
+                .free {
+                    margin-top: 40px;
+
+                    h3 {
+                        font-family: "Montserrat";
+                        font-size: 18px;
+                        color: $color-1;
+
+                        &::before {
+                            content: url('/images/header/Shape 12.png');
+                            color: $color-2;
+                            margin-right: 8px;
+                            font-size: 25px;
+                        }
+                    }
+                }
+
+                .photography {
+                    padding-top: 45px;
+
+                    p {
+                        width: 100px;
+                        font-family: "Montserrat";
+                        font-size: 10px;
+                        line-height: 18px;
+                        color: $color-1;
+                        background: #111111;
+                        text-align: center;
+                        padding: 0;
+                    }
+                }
+            }
+
+            .icons {
+
+                &::before {
+                    content: url("/images/header/Icons White.png");
+                    position: absolute;
+                    bottom: 0;
+                    right: 5px;
+                }
+            }
+        }
+    }
+
+    .row-2 {
+        background-color: $bg-color-3;
+        display: flex;
+        overflow: hidden;
+        justify-content: center;
+
+        .container {
+            display: flex;
+            width: 700px;
+            height: 40px;
+            justify-content: flex-end;
+            position: relative;
+
+            div {
+                color: white;
+                z-index: 2;
+                padding: 8px;
+                border: 1px solid $color-1;
+                margin-right: 45px;
+
+                a {
+
+                    &::before {
+                        content: url('/images/header/left.png');
+                        padding-right: 30px;
+                    }
+
+                    &:after {
+                        content: url('/images/header/right.png');
+                    }
+                }
+            }
+
+            &::before {
+                content: "";
+                position: absolute;
+                width: 500%;
+                height: 100%;
+                left: 0;
+                background-color: black;
+                z-index: 1;
+
+                i {
+                    color: $color-1;
+                    padding: 15px 17px;
+                    font-size: 28px;
+                    border: 1px solid $color-1;
+                    margin-right: -5px;
+
+                    &:hover {
+                        color: $bg-color-2;
+                        cursor: pointer;
+                    }
+                }
+            }
+        }
+    }
+}
