@@ -1,79 +1,72 @@
 .overview {
     display: flex;
+    position: relative;
     justify-content: center;
-    background-color: #DBDBDB;
     overflow: hidden;
+    background-color: #DBDBDB;
 
     .container {
         display: flex;
-        width: 1005px;
+        position: absolute;
+        left: 0;
+        width: 100%;
+        height: 100%;
 
         .image {
             display: none;
-            margin-top: 39px;
-            width: 315px;
             flex-shrink: 0;
+            width: 350px;
             height: 425px;
+            margin-top: 39px;
             background-color: $bg-color-4;
         }
 
         .text {
-            margin-top: 39px;
             position: relative;
             z-index: 0;
             width: 100%;
-           
+            margin-top: 60px;
+            padding-top: 41px;
+            padding-right: 55px;
+            padding-left: 83px;
 
             h3 {
-                font-family:'Montserrat';
-                font-weight: 700;
+                padding-bottom: 0;
+                color: $color-3;
+                font-family: 'Montserrat', sans-serif;
                 font-size: 30px;
-                line-height: 36px;
-                color:$color-3;
-                padding-bottom: 50px;
+                font-weight: 700;
+
             }
 
             h5 {
-                font-family:'Open Sans';
-                font-size:20px;
-                line-height: 30px;
-                color: $color-3;
-                font-weight: 300;
                 padding-bottom: 30px;
-              }
+                color: $color-3;
+                font-family: 'Open Sans', sans-serif;
+                font-size: 20px;
+                font-weight: 300;
+                line-height: 30px;
+            }
+
+            @mixin paragraps {
+                color: $color-3;
+                font-family: 'Open Sans', sans-serif;
+                font-size: 14px;
+                font-weight: 300;
+                line-height: 20px;
+            }
 
             .paragraps {
-                display: flex;
-                flex-direction: row;
-                flex-wrap:wrap;
+                column-count: 2;
 
-                .para {
-                    flex-direction: row;
-                    width: 300px;
-                    padding-bottom: 30px;
-
-                    p {
-                        font-family: 'Open Sans';
-                        font-size: 14px;
-                        font-weight: 300;
-                        line-height: 20px;
-                        color: $color-3;
-                    }
-                }
-
-                .large {
-                    padding: 0;
-                    width: 600px;
+                p {
+                    @include paragraps();
                 }
             }
 
-          &::before {
-                content: "";
-                background-color: white;
-                width: 500%;
-                height: 100%;
-                position: absolute;
-                z-index: -1;
+            .large {
+                @include paragraps();
+                padding-top: 30px;
             }
         }
     }

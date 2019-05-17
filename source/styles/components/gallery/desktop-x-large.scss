@@ -1,43 +1,6 @@
 .gallery {
-    background: $color-2;
-    width:100%;
-    height:520px;
-    h3{
-        font-family: 'Montserrat';
-        font-size:30px;
-        font-weight:700;
-        line-height:36px;
-        color:$color-1;
-    }
-    .item-big{
-        width: 620px;
-        height:410px;
-        background: $color-1;
-        margin-left:120px;
-        float: left;
-        margin-top:50px;
-    }
-    .small-items{
-        display: flex;
-        flex-direction: row;
-        flex-wrap: wrap;
-        justify-content: space-between;
-        width: 350px;
-        padding-top: 60px;
-        padding-left:30px;
-        .item {
-            background: $color-1;
-            width: 100px;
-            height: 100px;
-            margin-bottom: 10px;
-            &:hover{
-                border:7px solid $bg-color-2;
-                cursor: pointer;
-            }
 
-        }
-
+    .item-big {
+        margin-left: 19%;
     }
-    
-    
 }
