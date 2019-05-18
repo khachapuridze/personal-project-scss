@@ -13,6 +13,7 @@
 
         > img {
             position: absolute;
+            width: 100%;
         }
 
         .container {
@@ -170,6 +171,10 @@
                 img {
                     padding: 10px;
                     border-left: 1px solid $color-4;
+
+                    &:hover {
+                        background: $color-2;
+                    }
                 }
             }
         }
@@ -202,7 +207,7 @@
                     text-decoration: none;
 
                     &:hover {
-                        color: $bg-color-2;
+                        background-color: $bg-color-2;
                         cursor: pointer;
                     }
                 }
