@@ -1,6 +1,6 @@
 .header {
     width: 100%;
-    height: 425px;
+    height: 483px;
     background: $bg-color-1;
 
     .row-1 {
@@ -50,7 +50,7 @@
             background-color: $bg-color-2;
 
             .header-text {
-                padding-top: 30px;
+                margin-top: 30px;
 
                 a {
                     display: flex;
@@ -75,7 +75,7 @@
 
                 h3 {
                     margin-top: 0;
-                    padding-top: 8px;
+                    margin-top: 8px;
                     color: $color-1;
                     font-family: 'Montserrat', sans-serif;
                     font-size: 22px;
@@ -92,19 +92,6 @@
                     font-weight: 700;
                     letter-spacing: -1px;
                     line-height: 26px;
-                }
-
-                .par {
-                    margin-top: -3px;
-
-                    &::before {
-                        content: '';
-                        display: block;
-                        width: 280px;
-                        height: 1px;
-                        margin-top: 17px;
-                        background: $color-4;
-                    }
 
                     &::after {
                         content: '';
@@ -114,6 +101,10 @@
                         margin-top: 21px;
                         background: $color-4;
                     }
+                }
+
+                .par {
+                    margin-top: -3px;
 
                     p {
                         padding-top: 16px;
@@ -123,6 +114,15 @@
                         font-size: 16px;
                         font-weight: 300;
                         line-height: 20px;
+
+                        &::after {
+                            content: '';
+                            display: block;
+                            width: 280px;
+                            height: 1px;
+                            margin-top: 21px;
+                            background: $color-4;
+                        }
                     }
                 }
 
@@ -146,7 +146,7 @@
                 }
 
                 .photography {
-                    padding-top: 48px;
+                    margin-top: 48px;
 
                     p {
                         width: 100px;
@@ -163,9 +163,9 @@
 
             .icons {
                 position: absolute;
-                right: 4px;
+                right: 0;
                 bottom: 0;
-                border-top: 1px solid $color-4;
+                border: 1px solid $color-4;
 
                 img {
                     padding: 10px;
@@ -192,18 +192,18 @@
                 z-index: 2;
                 margin-right: 7px;
                 padding: 19px 28px;
-                border: 1px solid $color-1; 
                 color: $color-1;
 
                 a {
+                    padding: 15px 21px;
+                    border: 1px solid $color-1;
+                    color: $color-1;
+                    font-size: 29px;
+                    text-decoration: none;
 
-                    &::before {
-                        content: url('/images/header/left.png');
-                        padding-right: 30px;
-                    }
-
-                    &::after {
-                        content: url('/images/header/right.png');
+                    &:hover {
+                        color: $bg-color-2;
+                        cursor: pointer;
                     }
                 }
             }
