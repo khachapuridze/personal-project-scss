@@ -137,7 +137,7 @@
                         font-size: 18px;
 
                         &::before {
-                            content: url('/images/header/shape12.png');
+                            content: url(/images/header/shape12.png);
                             margin-top: 3px;
                             margin-right: 8px;
                             font-size: 25px;
@@ -188,7 +188,7 @@
             width: 1005px;
             height: 62px;
 
-            div {
+            .arrows {
                 z-index: 2;
                 margin-right: 7px;
                 padding: 19px 28px;
@@ -216,19 +216,6 @@
                 width: 500%;
                 height: 100%;
                 background-color: $color-2;
-
-                i {
-                    margin-right: -5px;
-                    padding: 15px 17px;
-                    border: 1px solid $color-1;
-                    color: $color-1;
-                    font-size: 28px;
-
-                    &:hover {
-                        color: $bg-color-2;
-                        cursor: pointer;
-                    }
-                }
             }
         }
     }
